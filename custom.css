@@ -1,0 +1,100 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset.css*/
+
+body {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+}
+.en-Light { 
+	font-family: GalanoGrotesque-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+.en-Regular { 
+	font-family: GalanoGrotesque-Regular;
+	font-weight: normal;
+	font-style: normal;
+}
+.en-SemiBold { 
+	font-family: GalanoGrotesque-SemiBold;
+	font-weight: normal;
+	font-style: normal;
+}
+.wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.logo {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.main {
+    height: 740px;
+    position: relative;
+}
+.main .main-textbox {
+    display: inline-block;
+    position: absolute;
+    left: 8%;
+    top: 260px;
+}
+.main .main-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+.main .main-txt {
+    font-weight: 300;
+    color: #505050;
+    line-height: 1.6;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 16px;
+}
+.main .main-img {
+    height: 600px;
+    border: solid #3F47FF 16px;
+    position: absolute;
+    right: 11%;
+    top: 5px;
+}
