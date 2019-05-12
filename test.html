@@ -1,0 +1,193 @@
+<html>
+<head>
+	<title>G-HONG Supporters 자격시험</title>
+    <meta property="og:url" content="http://www.g-hong.live/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jihong Spectrum">
+    <meta property="og:description" content="디자인계의 아이돌, 갓지홍">
+    <meta property="og:image" content="/">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="test.css">
+    
+<script language="javascript">
+var delay=10; //시간설정
+var correctAnswers=new Array("b","c","b","a","b","a","d","c","a","c");  //정답
+
+var q_num=1;
+var timer;
+var layer;
+var clock=delay;
+var score=0;
+
+function show_question(){
+	if (layer=eval("document.all.question"+q_num)){
+		layer.style.display="inline";
+		document.all.timeLeft.innerHTML=clock;
+		hide_question();
+	} else {
+		document.all.timeLeft.innerHTML=0;
+		document.all.quizScore.innerHTML=score+"0점";
+		document.all.quizScore.style.display="inline";
+        document.all.quizEnd.style.display="block";
+	}
+}
+
+function hide_question(){
+	if (clock>0) {
+		document.all.timeLeft.innerHTML=clock;
+		clock--;
+		timer=setTimeout("hide_question()",1000);
+	} else {
+		clearTimeout(timer);
+		document.all.answerBoard.innerHTML=" ";
+		clock=delay;
+		layer.style.display="none";
+		q_num++;
+		show_question();
+	}
+}
+
+function check_answer(answer){
+	if (correctAnswers[q_num-1]==answer){
+		score++;
+		document.all.answerBoard.innerHTML="<font color=#3F47FF><b>정답입니다.</b></font>";
+	} else {
+		document.all.answerBoard.innerHTML="<font color=#98d171><b>오답입니다.</b></font>";
+	}
+	clock=0;
+	clearTimeout(timer);
+	timer=setTimeout("hide_question()",700);
+}
+
+window.onload=show_question;
+</script>
+
+</head>
+
+<body>
+<div class="wrap test-paper">
+    <div class="logo-sec"><a href="/index.html"><img class="logo" height="26px" src="jihong.svg"/></a></div>
+    <div class="top-sec testpaper-title">
+        <h3><span class="en-bold main-title">G-HONG<br>Supporters</span><br><span class="test-txt">자격시험</span></h3>
+    </div>
+    <div class="top-sec time-limit">제한시간 <br> <span class="time-left"><span id="timeLeft"></span></span></div>
+    <br>
+    <div class="line"></div>
+    <div id="answerBoard"> </div>
+    <div class="q-section" id="question1" style="display:none">
+        <span class="q-title">[문제1] 지홍님이 퇴사 후 만든 단체의 이름은?</span><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">1) 디자인 씬</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">2) 디자인 스펙트럼</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">3) 디자인 스펙타클</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">4) 디자인 스릴러</a><br>
+    </div>
+
+    <div class="q-section" id="question2" style="display:none">
+        <span class="q-title">[문제2] 지홍님이 현재 하는 팟캐스트의 이름은?</span><br>
+    <a href="javascript:void(0)" onclick="check_answer('a')">1) 디자인 베터</a><br>
+    <a href="javascript:void(0)" onclick="check_answer('b')">2) 테이블 디자인</a><br>
+    <a href="javascript:void(0)" onclick="check_answer('c')">3) 디자인 테이블</a><br>
+    <a href="javascript:void(0)" onclick="check_answer('d')">4) 디자이너스토리</a><br>
+    </div>
+
+    <div class="q-section" id="question3" style="display:none">
+        <span class="q-title">[문제3] 지홍님이 기존에 다녔던 직장은?</span><br>
+    <a href="javascript:void(0)" onclick="check_answer('a')">1) LG전자</a><br>
+    <a href="javascript:void(0)" onclick="check_answer('b')">2) 삼성전자</a><br>
+    <a href="javascript:void(0)" onclick="check_answer('c')">3) 네이버</a><br>
+    <a href="javascript:void(0)" onclick="check_answer('d')">4) 카카오</a><br>
+    </div>
+    
+    <div class="q-section" id="question4" style="display:none">
+        <span class="q-title">[문제4] 지홍님의 생일은? </span>
+        <br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">1) 10월 1일</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">2) 5월 24일</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">3) 7월 9일</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">4) 2월 6일</a><br>
+    </div>
+
+    <div class="q-section" id="question5" style="display:none">
+        <span class="q-title">[문제5] 지홍님은 후드티 구매를 즐겨한다.</span><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">1) O</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">2) X</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">3) 후드티 매니아다.</a><br>
+    </div>
+    
+    <div class="q-section" id="question6" style="display:none">
+        <span class="q-title">[문제6] 지홍님이 가장 최근에 다녀온 여행지는?</span><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">1) 도쿄</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">2) 오사카</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">3) 베를린</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">4) 프랑크푸르트</a><br>
+    </div>
+    
+    <div class="q-section" id="question7" style="display:none">
+        <span class="q-title">[문제7] 다음중 지홍님이 주관한 수업이 아닌 것은?</span><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">1) 멋쟁이사자처럼:디자인</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">2) Communication Design with 우아한형제들</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">3) 디자이너를 위한 웹프로그래밍</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">4) 실무로부터 배우는 UX</a><br>
+    </div>
+    
+    <div class="q-section" id="question8" style="display:none">
+        <span class="q-title">[문제8] 다음 중 지홍님이 연사로 선 컨퍼런스가 아닌 것은?</span><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">1) Google I/O extended Seoul 18</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">2) 2017 퓨처 컨퍼런스</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">3) Make 커뮤니티 쇼케이스</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">4) 이상한모임 2017 연말정산 회고</a><br>
+    </div>
+    
+    <div class="q-section" id="question9" style="display:none">
+        <span class="q-title">[문제9] 지홍님이 스터디파이의 온라인 스터디에서 진행했던 주제는?</span><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">1) UX/프로덕트 디자인 토론</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">2) 디자인 주니어를 위한 인사이트 활용법</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">3) 디자이너를 위한 글쓰기</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">4) Car UX</a><br>
+        
+    </div>
+    
+    <div class="q-section" id="question10" style="display:none">
+        <span class="q-title">[문제10] 팟캐스트에서 지홍님이 후속으로 진행을 맡기 시작한 에피소드는?(시즌1 한정)</span><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">1) 11화</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">2) 15화</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">3) 17화</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">4) 19화</a><br>
+    </div>
+    
+    <div id="quizEnd" style="display: none">
+        <h1 class="end-title">당신의 점수는?</h1>
+        <div id="quizScore" style="display:none"></div>
+        <div class="scoreGrade">
+            <div class="grade">
+                <h5 class="grade-title">10~30점</h5>
+                <span>지홍님에 대해 아직 잘 모르시는 군요..? <span>&#x1F625</span></span>
+                <p>공부자료 드릴테니 얼른 지홍님에 대해 공부하러가세요!! &#x1F624</p>
+                <a target="_blank" class="grad-C_link" href="https://www.facebook.com/jihere1001">공부하러 가기</a>
+            </div>
+            <div class="grade">
+                <h5 class="grade-title">40~60점</h5>
+                <span>G-HONG 서포터즈가 되기까지 얼마 남지 않았어요! &#x1F609</span>
+                <p>조금만 더 공부해서 다시 오세요. &#x1F60C</p>
+                <a target="_blank" class="grad-C_link" href="https://www.designspectrum.org/">공부하러 가기</a>
+            </div>
+            <div class="grade">
+                <h5 class="grade-title">70~100점</h5>
+                <span>당신을 G-HONG 서포터즈로 임명합니다.&#x1F60D</span>
+                <p>저희와 함께 언제 어디서나 지홍님을 덕질해주세요! &#x1F61A</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="footer quiz-page">
+        <span class="foot-left">Powered by Likelion Design-Class 2019</span>
+        <br class="m-br">
+        <span class="foot-right">Web designed by Minji | BI designed by Jungyoon | Test-conetents made by Seung </span>
+    </div>
+</body>
+</html>

@@ -141,7 +141,7 @@ body {
     font-size: 18px;
     padding: 12px 18px;
     display: inline-block;
-    border: 6px solid #3F47FF;
+    border: 3px solid #3F47FF;
     color: #505050;
     font-weight: 500;
     margin-top: 30px;
@@ -151,10 +151,16 @@ body {
 }
 .contents .btn.two {
     margin-left: 20px;
+    background-color: #3F47ff;
+    color: #fff;
 }
 .contents .btn:hover {
     background-color: #3F47ff;
     color: #fff;
+}
+.contents .btn.two:hover {
+    background-color: #fff;
+    color: #505050;
 }
 .footer {
     font-size: 13px;

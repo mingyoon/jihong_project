@@ -1,0 +1,132 @@
+.wrap.test-paper {
+    padding: 0 7%;
+    min-height: 90%;
+}
+.wrap.test-paper .logo-sec {
+/*    text-align: center;*/
+}
+.wrap.test-paper .logo-sec .logo {
+    margin-left: 0px;
+}
+.test-paper .top-sec {
+    vertical-align: bottom;
+}
+.time-limit {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: #505050;
+    display: inline-block;
+    width: 38%;
+    font-size: 13px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+.time-limit .time-left {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #3F47FF;
+}
+.testpaper-title {
+    font-size: 36px;
+    margin-top: 30px;
+    display: inline-block;
+    width: 60%;
+    line-height: 1.1;
+    box-sizing: border-box;
+}
+.testpaper-title .test-txt {
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 32px;
+}
+.test-paper .line {
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 52px;
+    margin-top: 30px;
+}
+.q-section {
+    margin-top: 40px;
+}
+.q-section .q-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: inline-block;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+.q-section a {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #505050;
+    text-decoration: none;
+    cursor: pointer;
+}
+#quizEnd {
+    text-align: center;
+}
+#quizEnd .end-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 300;
+}
+#quizEnd #quizScore {
+    font-size: 38px;
+    font-weight: 600;
+    color: #3F47ff;
+    border-bottom: 8px double #3F47FF;
+}
+.scoreGrade {
+    margin: 85px auto 100px;;
+    max-width:400px;
+}
+.scoreGrade .grade {
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 300;
+}
+.scoreGrade .grade h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.scoreGrade .grade a {
+    text-decoration: none;
+    color: #3F47FF;
+    font-weight: 500;
+    font-size: 14px;
+    border: 3px solid #3F47FF;
+    padding: 4px 8px;
+    margin: 14px 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.scoreGrade .grade a:hover {
+    background-color: #3F47FF;
+    color: #fff;
+}
+.footer.quiz-page {
+/*
+    position: absolute;
+    bottom: 0;
+    right:0;
+    left: 0;
+*/
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .testpaper-title {
+        font-size: 30px;
+    }
+    .testpaper-title .test-txt {
+        font-size: 28px;
+    }
+    .time-limit .time-left {
+        font-size: 28px;
+    }
+}
