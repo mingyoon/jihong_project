@@ -18,6 +18,9 @@
     .p-br {
         display: none;
     }
+    .m-br {
+        display: block;
+    }
     .logo {
         margin-top: 30px;
         margin-left: 30px;
@@ -49,5 +52,43 @@
         display: inline-block;
         left: 0;
     }
-  
+    .contents {
+        padding: 80px 0px 100px 0px;
+    }
+    .contents .sec.test-title, .contents .sec.test {
+        width: 100%;
+        display: block;
+    }
+    .contents .sec.test {
+        text-align: center;
+    }
+    .contents .sec.test-title h3 {
+        padding-left: 10%;
+        margin-bottom: 40px;
+    }
+    .contents .sec.test .test-ex {
+        width:80%;
+        margin: 0 auto;
+        font-size: 15px;
+        text-align: left;
+    }
+    .contents .btn-wrap {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .contents .sec.test .btn {
+        font-size: 14.5px;
+        padding: 10px 10px;
+        display: inline-block;
+    }
+    .contents .sec.test .btn.two {
+        margin-left: 10px;
+    }
+    .footer .foot-right {
+        position: inherit;
+        left: 0;
+        margin-top: 10px;
+        display: inline-block;
+        line-height: 1.3;
+    }
 }
