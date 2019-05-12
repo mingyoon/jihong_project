@@ -134,4 +134,7 @@
         margin-bottom: 24px;
         margin-top: 24px;
     }
+    .wrap.test-paper {
+        min-height: 100%;
+    }
 }
