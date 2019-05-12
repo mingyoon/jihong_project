@@ -44,7 +44,7 @@
 }
 .test-paper .line {
     border-bottom: 1px solid #e8e8e8;
-    margin-bottom: 52px;
+    margin-bottom: 30px;
     margin-top: 30px;
 }
 .q-section {
@@ -128,5 +128,9 @@
     }
     .time-limit .time-left {
         font-size: 28px;
+    }
+    .test-paper .line {
+        margin-bottom: 24px;
+        margin-top: 24px;
     }
 }
