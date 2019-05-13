@@ -97,10 +97,10 @@
 }
 .scoreGrade .grade a {
     text-decoration: none;
-    color: #3F47FF;
-    font-weight: 500;
+    color: #999;
+    font-weight: 400;
     font-size: 14px;
-    border: 3px solid #3F47FF;
+    border: 1px solid #999;
     padding: 4px 8px;
     margin: 14px 0;
     display: inline-block;
