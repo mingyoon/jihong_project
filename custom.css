@@ -43,6 +43,10 @@ table {
 }
 /*reset.css*/
 
+div#preload {
+    display: none;
+}
+
 body {
     font-family: 'Spoqa Han Sans', 'Sans-serif';
 }
